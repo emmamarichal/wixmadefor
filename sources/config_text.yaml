@@ -1,40 +1,80 @@
 # Config for Text static fonts only
 sources:
-  - WixMadeforText-Bold.ufo
-  - WixMadeforText-BoldItalic.ufo
-  - WixMadeforText-Italic.ufo
-  - WixMadeforText-Medium.ufo
-  - WixMadeforText-MediumItalic.ufo
-  - WixMadeforText-Regular.ufo
-  - WixMadeforText-ExtraBold.ufo
-  - WixMadeforText-ExtraBoldItalic.ufo
+  - WixMadeforText.designspace
+  - WixMadeforText-Italic.designspace
+familyName: "WixMadeforText"
 autohintTTF:
   false
-buildVariable:
-  false
-buildWebfont:
-  false
+buildVariable: true
+buildWebfont: true
 logLevel: WARNING
 outputDir:
   '../fonts/Text'
-vttSources:
-  WixMadeforText-Bold.ttf:
-    WixMadeforText-Bold_VTT_Hinting.ttx
-  WixMadeforText-BoldItalic.ttf:
-    WixMadeforText-BoldItalic_VTT_Hinting.ttx
-  WixMadeforText-Italic.ttf:
-    WixMadeforText-Italic_VTT_Hinting.ttx
-  WixMadeforText-Medium.ttf:
-    WixMadeforText-Medium_VTT_Hinting.ttx
-  WixMadeforText-MediumItalic.ttf:
-    WixMadeforText-MediumItalic_VTT_Hinting.ttx
-  WixMadeforText-Regular.ttf:
-    WixMadeforText-Regular_VTT_Hinting.ttx
-  WixMadeforText-ExtraBold.ttf:
-    WixMadeforText-ExtraBold_VTT_Hinting.ttx
-  WixMadeforText-ExtraBoldItalic.ttf:
-    WixMadeforText-ExtraBoldItalic_VTT_Hinting.ttx
-googleFonts:
-  true
+# vttSources:
+#   WixMadeforText-Bold.ttf:
+#     WixMadeforText-Bold_VTT_Hinting.ttx
+#   WixMadeforText-BoldItalic.ttf:
+#     WixMadeforText-BoldItalic_VTT_Hinting.ttx
+#   WixMadeforText-Italic.ttf:
+#     WixMadeforText-Italic_VTT_Hinting.ttx
+#   WixMadeforText-Medium.ttf:
+#     WixMadeforText-Medium_VTT_Hinting.ttx
+#   WixMadeforText-MediumItalic.ttf:
+#     WixMadeforText-MediumItalic_VTT_Hinting.ttx
+#   WixMadeforText-Regular.ttf:
+#     WixMadeforText-Regular_VTT_Hinting.ttx
+#   WixMadeforText-ExtraBold.ttf:
+#     WixMadeforText-ExtraBold_VTT_Hinting.ttx
+#   WixMadeforText-ExtraBoldItalic.ttf:
+#     WixMadeforText-ExtraBoldItalic_VTT_Hinting.ttx
+#googleFonts:
+#  true
 category:
   - SANS_SERIF
+axisOrder:
+  - wght
+stat:
+  WixMadeforText[wght].ttf:
+  - name: Weight
+    tag: wght
+    values:
+    - name: Regular
+      value: 400
+      linkedValue: 700
+      flags: 2
+    - name: Medium
+      value: 500
+    - name: SemiBold
+      value: 600
+    - name: Bold
+      value: 700
+    - name: ExtraBold
+      value: 800
+  - name: Italic
+    tag: ital
+    values:
+    - name: Roman
+      value: 0
+      linkedValue: 1
+      flags: 2
+  WixMadeforText-Italic[wght].ttf:
+  - name: Weight
+    tag: wght
+    values:
+    - name: Regular
+      value: 400
+      linkedValue: 700
+      flags: 2
+    - name: Medium
+      value: 500
+    - name: SemiBold
+      value: 600
+    - name: Bold
+      value: 700
+    - name: ExtraBold
+      value: 800
+  - name: Italic
+    tag: ital
+    values:
+    - name: Italic
+      value: 1

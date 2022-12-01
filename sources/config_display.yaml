@@ -1,25 +1,33 @@
-# Config for Display static fonts only
+# Config for building Text and Display variable fonts only
 sources:
-  - WixMadeforDisplay-Bold.ufo
-  - WixMadeforDisplay-Regular.ufo
-  - WixMadeforDisplay-ExtraBold.ufo
+  - WixMadeforDisplay.designspace
+familyName: "WixMadeforDisplay"
 logLevel: WARNING
-autohintTTF:
-  false
-buildVariable:
-  false
-buildWebfont:
-  false
 outputDir:
   '../fonts/Display'
-vttSources:
-  WixMadeforDisplay-Bold.ttf:
-    WixMadeforDisplay-Bold_VTT_Hinting.ttx
-  WixMadeforDisplay-Regular.ttf:
-    WixMadeforDisplay-Regular_VTT_Hinting.ttx
-  WixMadeforDisplay-ExtraBold.ttf:
-    WixMadeforDisplay-ExtraBold_VTT_Hinting.ttx
-googleFonts:
-  true
+#stylespaceFile: "WixMadeforVF.stylespace"
+autohintTTF:
+  false
+buildStatic: true
+#googleFonts:
+#  true
 category:
   - SANS_SERIF
+axisOrder:
+  - wght
+stat:
+  - name: Weight
+    tag: wght
+    values:
+    - name: Regular
+      value: 400
+      linkedValue: 700
+      flags: 2
+    - name: Medium
+      value: 500
+    - name: SemiBold
+      value: 600
+    - name: Bold
+      value: 700
+    - name: ExtraBold
+      value: 800

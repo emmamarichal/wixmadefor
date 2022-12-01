@@ -1,13 +1,12 @@
-# Config for building Text and Display variable fonts only
+# Config for building Display variable fonts only
 sources:
   - WixMadeforDisplay.designspace
-familyName: "WixMadeforDisplay"
+familyName: "Wix Made for Display"
 logLevel: WARNING
 outputDir:
   '../fonts/Display'
 #stylespaceFile: "WixMadeforVF.stylespace"
-autohintTTF:
-  false
+autohintTTF: true
 buildStatic: true
 #googleFonts:
 #  true

@@ -1,38 +1,19 @@
-# Config for Text static fonts only
+# Config for Text variable fonts only
 sources:
   - WixMadeforText.designspace
   - WixMadeforText-Italic.designspace
-familyName: "WixMadeforText"
-autohintTTF:
-  false
+familyName: "Wix Made for Text"
+autohintTTF: true
 buildVariable: true
-buildWebfont: true
+buildStatic: false
 logLevel: WARNING
 outputDir:
   '../fonts/Text'
-# vttSources:
-#   WixMadeforText-Bold.ttf:
-#     WixMadeforText-Bold_VTT_Hinting.ttx
-#   WixMadeforText-BoldItalic.ttf:
-#     WixMadeforText-BoldItalic_VTT_Hinting.ttx
-#   WixMadeforText-Italic.ttf:
-#     WixMadeforText-Italic_VTT_Hinting.ttx
-#   WixMadeforText-Medium.ttf:
-#     WixMadeforText-Medium_VTT_Hinting.ttx
-#   WixMadeforText-MediumItalic.ttf:
-#     WixMadeforText-MediumItalic_VTT_Hinting.ttx
-#   WixMadeforText-Regular.ttf:
-#     WixMadeforText-Regular_VTT_Hinting.ttx
-#   WixMadeforText-ExtraBold.ttf:
-#     WixMadeforText-ExtraBold_VTT_Hinting.ttx
-#   WixMadeforText-ExtraBoldItalic.ttf:
-#     WixMadeforText-ExtraBoldItalic_VTT_Hinting.ttx
-#googleFonts:
-#  true
 category:
   - SANS_SERIF
 axisOrder:
   - wght
+  - ital
 stat:
   WixMadeforText[wght].ttf:
   - name: Weight

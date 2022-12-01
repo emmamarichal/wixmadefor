@@ -1,0 +1,15 @@
+# Config for building Text and Display variable fonts only
+sources:
+  - WixMadeforDisplay.designspace
+  - WixMadeforText.designspace
+  - WixMadeforText-Italic.designspace
+logLevel: WARNING
+stylespaceFile: "WixMadeforVF.stylespace"
+autohintTTF:
+  false
+buildStatic:
+  false
+googleFonts:
+  true
+category:
+  - SANS_SERIF
